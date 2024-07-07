@@ -25,7 +25,8 @@
             <div class="flex gap-1 md:gap-3">
                 <button class="register">Register Interest</button>
                 <div class="md:w-10 w-7">
-                    <button id="switch" title="btn" type="button"><img class="moon" src="images/Frame.png" alt=""></button>
+                    <button id="switch" title="btn" type="button"><img class="moon" src="images/Frame.png"
+                            alt=""></button>
                 </div>
             </div>
         </nav>
@@ -762,7 +763,14 @@
         Copyright &copy; 2022 Creatives For You LTD
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        const htmlTag = document.getElementById("htmlTag");
+        const switchToggle = document.getElementById("switch");
+        switchToggle.addEventListener("click", function () {
+            htmlTag.classList.toggle("dark");
+
+        });
+    </script>
 </body>
 
 </html>
